@@ -1,0 +1,73 @@
+#menu-descktop{
+    width: 100%;
+    background: #F6DB40;
+    text-align: center;
+}
+#menu-descktop nav ul li{
+    display: inline-block;
+    margin: 10px 30px;
+}
+#menu-descktop nav ul li a{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3em;
+    color:#2A5DA4;
+    text-decoration: none;
+    font-weight: 500;
+}
+#menu-descktop nav ul li a:hover{
+    text-decoration: underline;
+}
+.ativo{
+    text-decoration: underline;
+}
+.grup-btn-menu{
+    display: none;
+}
+#menu-mobo{
+    display: none;
+}
+@media screen and (max-width:920px){
+    #menu-descktop{
+        display: none;
+    }
+
+    #menu-descktop{
+        display: none;
+     }
+     .grup-btn-menu{
+         display: block;
+     }
+     .grup-btn-menu button{
+        width: 60px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        border: none;
+        padding: 5px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: #fff;
+        color: #555;
+        font-weight: 500;
+        cursor: pointer;
+    }
+     #fecha-menu{
+         display: none;
+     }
+     #menu-mobo{
+         background-color: #2A5DA4;
+
+     }
+     #menu-mobo ul li a{
+        color:#F6DB40;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+    #menu-mobo ul li{
+        line-height: 50px;
+        text-align: center;
+        
+    }
+
+}

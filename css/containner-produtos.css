@@ -3,7 +3,7 @@
 }
 .containner-produtos nav{
     width: 100%;
-    background-color:rgb(212, 207, 207);
+    background-color:rgba(253, 208, 5, 0.685);
     width: 100%;
     text-align: center;
     display: block;
@@ -27,19 +27,23 @@
     display: block;
     cursor: pointer;
     text-decoration: none;
+    background-color:  rgba(253, 208, 5, 0.685);
+    border:none;
 
 }
-.containner-produtos nav ul li button:hover{
-    background-color: #fff;
-    color: #2A5DA4;
-    border-bottom-right-radius: 10px; 
-    border-bottom: 1px solid #2A5DA4;
+.containner-produtos nav ul li button img{
+    width: 24px*;
 }
-.containner-produtos nav ul li .btn-ativo{
-    background-color: #fff;
+.containner-produtos nav ul li button:hover{
+    background-color: rgba(255, 255, 255, 0.788);
     color: #2A5DA4;
     border-bottom-right-radius: 10px; 
-    border-bottom: 1px solid #2A5DA4;    
+}
+
+.containner-produtos nav ul li .btn-ativo{
+    background-color: rgba(255, 255, 255, 0.788);
+    color: #2A5DA4;
+    border-bottom-right-radius: 10px; 
 }
 .disabled{
     display: none;

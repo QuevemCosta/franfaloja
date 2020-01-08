@@ -32,7 +32,7 @@
 
 }
 .containner-produtos nav ul li button img{
-    width: 24px*;
+    width: 24px;
 }
 .containner-produtos nav ul li button:hover{
     background-color: rgba(255, 255, 255, 0.788);

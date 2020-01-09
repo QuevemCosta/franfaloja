@@ -49,7 +49,11 @@
     display: none;
 }
 
+
 /* produto-click*/
+.btn-desibled{
+    background-color: #f6db40;
+}
 .containner-produtos section .grup-produtos{
     display: flex;
     flex-direction: row;

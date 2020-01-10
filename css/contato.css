@@ -1,0 +1,10 @@
+#contato{
+    width: 100%;
+
+}
+#arte-franfaloja{
+    width: 400px;
+    height: 150px;
+    border:2px solid red;
+    border-radius: 50%;
+}

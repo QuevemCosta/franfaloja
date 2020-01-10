@@ -37,13 +37,11 @@
 .containner-produtos nav ul li button:hover{
     background-color: rgba(255, 255, 255, 0.788);
     color: #2A5DA4;
-    border-bottom-right-radius: 10px; 
 }
 
 .containner-produtos nav ul li .btn-ativo{
     background-color: rgba(255, 255, 255, 0.788);
     color: #2A5DA4;
-    border-bottom-right-radius: 10px; 
 }
 .disabled{
     display: none;
@@ -63,11 +61,26 @@
 }
 .containner-produtos section .grup-produtos .produto-click{
     max-width: 220px;
-    border: 1px solid #f6db40;
+    border: 1px solid #cec48d;
     margin:5px;
+    text-align:center;
+    color: #444;
+
+}
+.containner-produtos section .grup-produtos .produto-click h2{
+    font-size: 18px;
+    font-weight: 400;
 }
 .containner-produtos section .grup-produtos .produto-click img{
  width: 100%;
+}
+.containner-produtos section .grup-produtos .produto-click span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ebc802;
+}
+.containner-produtos section .grup-produtos .produto-click .av{
+    color: #2A5DA4;
 }
 @media screen and (max-width:700px){
     

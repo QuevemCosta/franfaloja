@@ -1,0 +1,15 @@
+#quem-somos{
+    width: 100%;
+    background-color: rgba(101, 148, 214, 0.651);
+    background-image: url('../bg/bg-1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#mascara-quem-somos{
+    width: 100%;
+    background-color: rgba(2, 58, 107, 0.637);
+}
+#mascara-quem-somos p{
+    width: 50%;
+    line-height: 40px;
+}

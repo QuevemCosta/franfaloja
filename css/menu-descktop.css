@@ -1,12 +1,12 @@
 #menu-descktop{
     width: 100%;
     background: #F6DB40;
-    text-align: center;
+    text-align: justify;
     border-bottom: 1px solid #fff;
 }
 #menu-descktop nav ul li{
     display: inline-block;
-    margin: 10px 30px;
+    margin: 5px 10px;
 }
 #menu-descktop nav ul li a{
     width: 100%;

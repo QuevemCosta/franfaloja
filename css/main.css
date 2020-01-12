@@ -1,0 +1,29 @@
+@media screen and (max-width:700px){
+
+    #content-contatos{
+        width: 100%;
+        padding: 0;
+        background-color: rgba(251, 255, 0, 0.61);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+    }
+    #content-contatos button{
+        background-color: rgba(255, 255, 255, 0);
+        width: 40px;
+        border: none;
+        padding: 5px;
+        margin: 0 5px;
+        cursor: pointer;        
+    }
+    #content-contatos button:hover{
+        background-color: rgba(255, 255, 255, 0.589);
+
+    }
+    #content-contatos button img{
+        width: 100%;
+    }
+}

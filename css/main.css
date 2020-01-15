@@ -1,3 +1,37 @@
+#content-contatos{
+    display: none;
+
+}
+#ct-email,#ct-telefone{
+    display: none;
+    width: 80%;
+    height: 120px;
+    position: absolute;
+    bottom: 100px;
+    background-color: rgba(7, 102, 165, 0.733);
+    border-radius: 10px;
+}
+#ct-email button,#ct-telefone button{
+    color:red;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ct-contatos p{
+    color:#ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    width:60%;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.ct-contatos .fechar{
+    font-weight:900;
+    font-size: 40px;
+}
+
 @media screen and (max-width:700px){
 
     #content-contatos{
@@ -11,19 +45,20 @@
         position: fixed;
         bottom: 0;
     }
-    #content-contatos button{
+    #content-contatos button, #content-contatos a{
         background-color: rgba(255, 255, 255, 0);
         width: 40px;
         border: none;
         padding: 5px;
         margin: 0 5px;
-        cursor: pointer;        
+        cursor: pointer;   
+        color:#fff;     
     }
-    #content-contatos button:hover{
+    #content-contatos button:hover,#content-contatos a:hover{
         background-color: rgba(255, 255, 255, 0.589);
 
     }
-    #content-contatos button img{
+    #content-contatos button img, #content-contatos a img{
         width: 100%;
     }
 }

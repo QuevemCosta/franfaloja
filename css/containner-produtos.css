@@ -61,12 +61,16 @@
 }
 .containner-produtos section .grup-produtos .produto-click{
     max-width: 220px;
-    border: 1px solid #cec48d;
+    box-shadow: 10px 10px 20px rgb(77, 53, 34);
     margin:10px;
+    border-radius: 10px;
     text-align:center;
     color: #444;
     cursor: pointer;
 
+}
+.containner-produtos section .grup-produtos .produto-click:hover{
+    padding: 5px;
 }
 .containner-produtos section .grup-produtos .produto-click h2{
     font-size: 18px;

@@ -40,4 +40,17 @@ function paginacao(id,click ){
         document.getElementById(listPag[i]).style.display="none"
     }
     
+
+}
+function mostraEmeil(){
+    document.getElementById('ct-email').style.display="block"
+}
+function fechaEmail(){
+    document.getElementById('ct-email').style.display="none"
+}
+function mostraTelefone(){
+    document.getElementById('ct-telefone').style.display="block"
+}
+function fechaTelefone(){
+    document.getElementById('ct-telefone').style.display="none"
 }

@@ -53,6 +53,7 @@
                     <!------------------------>
                     <div class="produto-click" onclick="pagProduto(<?echo $code;?>)">
                         <img src="base/<?echo $imagem;?>" alt="">
+                        <span class="<?echo $categoria?>"></span>
                         <h2><?echo $descircao;?></h2>
                         <span class="av"> R$ <?echo $preco_a_viata;?></span>
                         <p>ou</p>
@@ -72,4 +73,5 @@
             </section>
         </section>
 </body>
+        <script src="../js/main.js"></script>
 </html>

@@ -1,0 +1,3 @@
+function novoItem(){
+    alert("funciona");
+}

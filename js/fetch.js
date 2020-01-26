@@ -16,7 +16,7 @@ window.addEventListener('load',async function(){
 
                    const descricao = document.createTextNode(item["descricao"]);
                    const preco_a_vista = document.createTextNode("R$ "+item["preco_a_vista"]);
-                   const preco_parcelado = document.createTextNode("Ou "+"R$ "+item["preco_parcelado"]+" em 10X");
+                   const preco_parcelado = document.createTextNode("Ou "+"R$ "+item["preco_parcelado"]+" em até 10X");
 
                    const classe = document.createAttribute('class');
                    const src_image = document.createAttribute('src');

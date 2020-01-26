@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/topo.css">
+    <link rel="stylesheet" href="css/menu-descktop.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carrocel.css">
+    <link rel="stylesheet" href="css/containner-produtos.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        #section-cama, #section-eletro, #section-musica{
+            padding-top: 50px;
+        }
+        .section-produtos{
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .section-produtos div{
+            width: 180px;
+            cursor: pointer;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid rgb(241, 225, 131);
+            border-radius:5%;
+            box-shadow: 10px 10px 15px #444;
+
+        }
+
+        .section-produtos div:hover{
+            padding:5px;
+        }
+        .section-produtos div img{
+            width: 100%;
+            border-top-right-radius: 5%;
+            border-top-left-radius: 5%;
+        }
+        .section-produtos div h2,.section-produtos div legend,.section-produtos div span{
+            font-size: 0.8rem;
+            padding: 3px;
+        }
+        .section-produtos div span{
+            font-size: 20px;
+            font-weight: 600;
+            color: #2A5DA4;
+        }
+        .section-produtos div legend{
+            color: #eb5802;
+        }
+        .section-produtos div h2{
+            color: #444;
+        }
+        .categoria{
+            width: 100%;
+            border:1px solid blue;
+            display: block;
+        }
+
+        @media screen and (max-width: 700px) {
+                .section-produtos div{
+                width: 120px;  
+            }
+
+        }
+    </style>
+
+
+    <!--FONTES- 1 TEXTO COMUM 2 TITULOS E SUB TITOLOS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <title>Franfaloja:home Oficial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Franfaloja Oriximiná</h1>
+        <div id="logo">
+            <a href=""><img src="icons/logo.png" alt="Franfaloja Oriximiná"></a>
+        </div>
+
+        <div class="grup-btn-menu">
+            <button type="menu" id="abre-menu">Menu</button>
+            <button type="button" id="fecha-menu">x</button>
+        </div>
+        <div id="topo-contato" >
+            <ul>
+                
+                <li><img src="icons/call.png" alt=""> (93)3544-1051</li>
+                <li><img src="icons/whatsapp-logo-variant.png" alt=""> (93) 99138-1257</li>
+                <li><img src="icons/black-back-closed-envelope-shape.png" alt=""> franfa54@hotmail.com</li>
+            </ul>
+        </div>
+
+    </header>
+    <div id="menu-descktop">
+        <nav>
+            <ul>
+                <li class="ativo"><a href="index.html">Início</a></li>
+                <li><a href="paginas/ofertas.php">Ofertas</a></li>
+                <li><a href="paginas/contato.html">Contato</a></li>
+                <li><a href="paginas/quem-somos.html">Quem somos</a></li>
+            
+            </ul>
+        </nav>
+    </div>
+    <div id="menu-mobo">
+        <nav>
+            <ul>
+                <li class="ativo"><a href="index.html">Início</a></li>
+                <li><a href="paginas/ofertas.php">Ofertas</a></li>
+                <li><a href="paginas/contato.html">Contato</a></li>
+                <li><a href="paginas/quem-somos.html">Quem somos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="carrocel">
+            <div id="item-carrocel-1">
+                <h2>Oferta de produto</h2>
+            </div>
+            <div style="clear: both;"></div>
+        </section>
+        <!--Clicaveis para venda-->
+
+        <section class="containner-produtos">
+            <section id="carrocel">
+            
+            </div>
+            <div style="clear: both;"></div>
+        </section>
+            <nav>
+                <ul>
+                    <li title="Cama Mesa e banho">
+                        <a href="#section-cama" onclick="paginacao('btn-cama-banho')"  id="btn-cama-banho">
+                            <img src="icons/cama.png" alt="" style="width: 30px;" >
+                        </a>
+                    </li>
+                    <li title="Eletrodomesticos">
+                        <a href="#section-eletro" onclick="paginacao('btn-eletro')" id="btn-eletro">
+                            <img src="icons/eletro.png" alt="" style="width: 30px;" >
+                        </a>
+                    </li>
+                    <li title="Instrumentos musicais">
+                        <a href="#section-musica" onclick="paginacao('btn-musica')" id="btn-musica">
+                            <img src="icons/music.png" alt="" style="width: 30px;" s>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        <section id="section-cama">
+            <h2 class="categoria>">Cama</h2>
+            <div id="cama" class="section-produtos" >
+
+            </div>
+        </section>
+
+        <section id="section-eletro">
+            <h2>eltro</h2>
+            <div id="eletro" class="section-produtos" >
+                
+            </div >
+        </section>
+
+        <section id="section-musica">
+            <h2>musica</h2>
+                    <div id="musica" class="section-produtos" >
+            </div>
+        </section>
+    </section>
+
+    </main> 
+
+    <footer>
+        <div class="midias-sociais">
+            <a></a>
+        </div>
+        <p>&copy<a href="">OrixiSoft-2020</a></p>
+    </footer>
+    <footer id="content-contatos" class="ct-contatos">
+        <div id="ct-email">
+            <button type="button" class="fechar" onclick="fechaEmail()" >X</button>
+            <p>franfa54@hotmail.com</p>
+        </div>
+
+
+        <div id="ct-telefone" class="ct-contatos">
+            <button type="button" class="fechar" onclick="fechaTelefone()" >
+                X        
+            </button>
+            <p>(93)3544-1051</p>
+        </div>
+
+        <button type="button" onclick="mostraEmeil()" >
+            <img src="icons/black-back-closed-envelope-shape.png" alt="email franfaloja oriximina">
+        </button>
+
+        <button type="button" onclick="mostraTelefone()" >
+            <img src="icons/call.png" alt="Telefone franfaloja">    
+        </button>
+
+        <a type="button" href="https://www.facebook.com/franfaloja" target="black" >
+            <img src="icons/facebook-circular-logo.png" alt=" FacebookPagina Oficial franfaloja">    
+        </a>
+        <a href=" https://api.whatsapp.com/send?phone=+559399138-1257&text=Olá%20Desejo%20" target="blank" >
+            <img src="icons/whatsapp-logo-variant.png" alt="whatsapp franfaloja">
+        </a>
+    </footer>
+    <!--Javascriip-->
+    <script src="js/main.js"></script>
+    <script src="js/fetch.js"></script>
+    <script src="js/btn-menu.js"></script>
+    <script src="js/paginacao.js"></script>
+    <script src="js/pag-produto.js"></script>
+
+</body>
+
+</html>

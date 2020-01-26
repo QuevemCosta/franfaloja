@@ -28,6 +28,8 @@ header #topo-contato ul img{
 }
 header #topo-contato ul li{
     list-style-type: none;
+    font-size: 0.9rem;
+
 }
 
 header #grup-menu{display: none;}

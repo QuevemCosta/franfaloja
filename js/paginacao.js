@@ -1,8 +1,12 @@
+/*window.addEventListener('load',function(){
+
+    document.getElementById('btn-cama-banho').className="btn-ativo"
+})
 function paginacao(id,click ){
-    let listPag = ['eletro', 'musica', 'cama-mesa'];
-    let remover = listPag.indexOf(id)
-    let removido = listPag.splice(remover, 1)
-    let pagAtual = removido
+   // let listPag = ['eletro', 'musica', 'cama-mesa'];
+    //let remover = listPag.indexOf(id)
+    //let removido = listPag.splice(remover, 1)
+    //let pagAtual = removido
     
     let listBtn =['btn-cama-banho','btn-eletro','btn-musica']
     let positon_btn = listBtn.indexOf(click)
@@ -12,6 +16,7 @@ function paginacao(id,click ){
         
     if (!listPag.indexOf[positon_btn]) {
 
+        console.log(atual)
         document.getElementById(atual).className='btn-ativo'
         for(let i=0;i<listBtnDeseblad;i++){
             document.getElementById(listBtn[i]).className="btn-desabled"
@@ -22,6 +27,7 @@ function paginacao(id,click ){
     //-----------------
     
     //----- se a pagina clicada nao esta na listPag e porque esta ativa--------
+  
     let listDesabledPags = listPag.length
     if (!listPag.indexOf[removido]) {//se removido é igual a -1
         //pagina atual = display block
@@ -41,7 +47,7 @@ function paginacao(id,click ){
     }
     
 
-}
+}*/
 function mostraEmeil(){
     document.getElementById('ct-email').style.display="block"
 }

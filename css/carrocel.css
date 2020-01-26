@@ -2,6 +2,7 @@
     display: block;
     position: relative;
     width: 100%;
+    padding: 0;
     
 }
 #carrocel .grup-carrocel{
@@ -13,7 +14,7 @@
 }
 #carrocel .grup-carrocel div{
     float: none;
-    width: 320px;
+    width: 400px;
     
 }
 #carrocel .grup-carrocel >div img{

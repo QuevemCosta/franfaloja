@@ -19,10 +19,11 @@
     margin: 0;
     width: 25%;
 }
-.containner-produtos nav ul li button{
+.containner-produtos nav ul li a{
     padding: 5px;
     width: 100%;
     margin: 0;
+    font-size: large;
     color: #2A5DA4;   
     display: block;
     cursor: pointer;
@@ -31,10 +32,10 @@
     border:none;
 
 }
-.containner-produtos nav ul li button img{
-    width: 24px;
+.containner-produtos nav ul li a img{
+    width: 30px;
 }
-.containner-produtos nav ul li button:hover{
+.containner-produtos nav ul li a:hover{
     background-color: rgba(255, 255, 255, 0.788);
     color: #2A5DA4;
 }
@@ -52,46 +53,12 @@
 .btn-desibled{
     background-color: #f6db40;
 }
-.containner-produtos section .grup-produtos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-.containner-produtos section .grup-produtos .produto-click{
-    max-width: 220px;
-    box-shadow: 10px 10px 20px rgb(77, 53, 34);
-    margin:10px;
-    border-radius: 10px;
-    text-align:center;
-    color: #444;
-    cursor: pointer;
-
-}
-.containner-produtos section .grup-produtos .produto-click:hover{
-    padding: 5px;
-}
-.containner-produtos section .grup-produtos .produto-click h2{
-    font-size: 18px;
-    font-weight: 400;
-}
-.containner-produtos section .grup-produtos .produto-click img{
- width: 100%;
-}
-.containner-produtos section .grup-produtos .produto-click span{
-    font-size: 20px;
-    font-weight: 600;
-    color: #ebc802;
-}
-.containner-produtos section .grup-produtos .produto-click .av{
-    color: #2A5DA4;
+.btn-ativo{
+    background-color: rgba(240, 248, 255, 0.596);
 }
 @media screen and (max-width:700px){
-    
-    .containner-produtos section .grup-produtos .produto-click{
-        flex-wrap: wrap;
-        width: 150px;
-        margin-bottom: 5px;
+    .containner-produtos nav ul li a img{
+        width: 16px;
+        height: 16px;
     }
 }

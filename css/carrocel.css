@@ -1,49 +1,41 @@
 #carrocel{
-    display: block;
-    position: relative;
+    color:#444;
     width: 100%;
+    height: 60vh;
+}
+#carrocel > div{
+    width: 100%;
+    padding-top:50px;
+    background-color: rgba(252, 252, 252, 0.959);
+    height: 100%;
+
+}
+#carrocel > div >div{
+    width: 90%;
+    height: 70%;
     padding: 0;
-    
+    margin:auto;
+    border-radius: 25px;
+    border:none;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px;
+
+
 }
-#carrocel .grup-carrocel{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+#carrocel > div >div .mascara{
     width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    margin: 0;
+    padding: 20px;
+    font-size: 450px;
 }
-#carrocel .grup-carrocel div{
-    float: none;
-    width: 400px;
-    
-}
-#carrocel .grup-carrocel >div img{
-    width: 100%;
-}
-/*largura de 1024px*/
-@media screen and (max-width:1024px){
-
-    #carrocel .grup-carroce{
-        
-    }
-    #carrocel .grup-carrocel  div{
-  
-    }
-    #carrocel .grup-carrocel >div img{
-        width: 100%;
-    }
-}
-
-/*largura de 700px*/
-@media screen and (max-width:700px){
-
-    #carrocel .grup-carroce{
-        flex-flow: column;
-    }
-    #carrocel .grup-carrocel  div{
-        width: 100%;
-    }
-    #carrocel .grup-carrocel >div img{
-        width: 100%;
-    }
+#carrocel > div #item-item-1{
+    background-image:url('../img/banner/banner5.jpg') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: right;
+    text-align: center;
 }

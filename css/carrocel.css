@@ -17,7 +17,7 @@
     margin:auto;
     border-radius: 25px;
     border:none;
-    background-color: #ffffff;
+    background-color: rgb(94, 96, 99);
     box-shadow: 5px 5px 15px;
 
 
@@ -28,13 +28,34 @@
     border: none;
     border-radius: 25px;
     margin: 0;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.295);
+    padding: 20px 60px;
+    text-align: left;
+    line-height: normal;
+    background-color: rgba(0, 0, 0, 0.514);
 }
 #carrocel > div > figure .mascara h2{
-    font-size: 2rem;
+    color: #F6DB40;
+    font-size: 3.2em;
     font-weight: 500;
-    font-family: font-family: 'Bowlby One SC', cursive;;
+    font-family: 'Dancing Script', cursive;
+}
+#carrocel > div > figure .mascara > span{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+}
+#carrocel > div > figure .mascara  span  span{
+    color: #eee;
+    font-size: 2rem;
+    font-family:'Dancing Script', cursive;
+    font-weight: 400;
+
+}
+#carrocel > div > figure .mascara p{
+    color: #444;
+    font-size: 1.2em;
 }
 #carrocel > div #item-item-1{
     background-image:url('../img/banner/banner5.jpg') ;
@@ -43,4 +64,56 @@
     background-clip: border-box;
     background-position: right;
     text-align: center;
+}
+@media screen and (max-width:700px){
+    #carrocel > div > figure .mascara{
+        background-color: rgba(0, 0, 0, 0.397);
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: normal;
+    }
+    #carrocel > div > figure .mascara h2{
+        color: #F6DB40;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    #carrocel > div > figure .mascara span{
+        color: red;
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    #carrocel > div > figure .mascara p{
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        line-height: 30px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width:320px){
+    #carrocel > div > figure .mascara{
+        background-color: rgba(0, 0, 0, 0.397);
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: normal;
+    }
+    #carrocel > div > figure .mascara h2{
+        color: #F6DB40;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    #carrocel > div > figure .mascara span{
+        color: red;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    #carrocel > div > figure .mascara p{
+        color: #fff;
+        text-align: center;
+        font-size: 0.5em;
+        line-height: 20px;
+        font-weight: 300;
+    }
 }

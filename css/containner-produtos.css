@@ -49,13 +49,65 @@
 }
 
 
-/* produto-click*/
-.btn-desibled{
-    background-color: #f6db40;
+/* container item produto*/
+#section-cama, #section-eletro, #section-musica{
+    padding-top: 50px;
 }
-.btn-ativo{
-    background-color: rgba(240, 248, 255, 0.596);
+.section-produtos{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+.section-produtos div{
+    width: 180px;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid rgb(241, 225, 131);
+    border-radius:5%;
+    box-shadow: 10px 10px 15px #444;
+
+}
+
+.section-produtos div:hover{
+    padding:5px;
+}
+.section-produtos div img{
+    width: 100%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+.section-produtos div h2,.section-produtos div legend,.section-produtos div span{
+    font-size: 0.8rem;
+    padding: 3px;
+}
+.section-produtos div span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2A5DA4;
+}
+.section-produtos div legend{
+    color: #eb5802;
+}
+.section-produtos div h2{
+    color: #444;
+}
+.categoria{
+    width: 100%;
+    border:1px solid blue;
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+        .section-produtos div{
+        width: 120px;  
+    }
+
+}
+
 @media screen and (max-width:700px){
     .containner-produtos nav ul li a img{
         width: 16px;

@@ -1,21 +1,21 @@
 #carrocel{
     color:#444;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
 }
 #carrocel > div{
     width: 100%;
-    padding-top:50px;
+    padding-top:0px;
     background-color: rgba(252, 252, 252, 0.959);
     height: 100%;
 
 }
 #carrocel > div > figure{
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin:auto;
-    border-radius: 25px;
+    border-radius: 0px;
     border:none;
     background-color: rgb(94, 96, 99);
     box-shadow: 5px 5px 15px;
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 25px;
+    border-radius: 0px;
     margin: 0;
     padding: 20px 60px;
     text-align: left;
@@ -58,13 +58,51 @@
     font-size: 1.2em;
 }
 #carrocel > div #item-item-1{
-    background-image:url('../img/banner/banner5.jpg') ;
+    background-image:url('../img/banner/banner5.jpg');
+    background-color: #eee;
     background-size: contain;
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: right;
     text-align: center;
 }
+#carrocel > div #item-item-2{
+    background-image:url('../img/banner/banner1.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: right;
+    text-align: center;
+}
+#carrocel > div #item-item-3{
+    background-image:url('../img/banner/banner2.jpg') ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: right;
+    text-align: center;
+}
+#carrocel > div #item-item-4{
+    background-image:url('../img/banner/banner3.jpg') ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: right;
+    text-align: center;
+}
+
+/* controle de desibled e */
+.set{
+    display: block;
+}
+.unset{
+    display: none;
+}
+/* boões*/
+
+
+/* fim controle de desibled e */
+
 @media screen and (max-width:700px){
     #carrocel > div > figure .mascara{
         background-color: rgba(0, 0, 0, 0.397);

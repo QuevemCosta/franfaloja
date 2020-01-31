@@ -8,7 +8,6 @@
     padding-top:0px;
     background-color: rgba(252, 252, 252, 0.959);
     height: 100%;
-
 }
 #carrocel > div > figure{
     width: 100%;
@@ -65,6 +64,8 @@
     background-clip: border-box;
     background-position: right;
     text-align: center;
+    background-attachment: fixed;
+
 }
 #carrocel > div #item-item-2{
     background-image:url('../img/banner/banner1.jpg') ;
@@ -73,6 +74,8 @@
     background-clip: border-box;
     background-position: right;
     text-align: center;
+    background-attachment: fixed;
+
 }
 #carrocel > div #item-item-3{
     background-image:url('../img/banner/banner2.jpg') ;
@@ -81,6 +84,8 @@
     background-clip: border-box;
     background-position: right;
     text-align: center;
+    background-attachment: fixed;
+
 }
 #carrocel > div #item-item-4{
     background-image:url('../img/banner/banner3.jpg') ;
@@ -89,6 +94,8 @@
     background-clip: border-box;
     background-position: right;
     text-align: center;
+    background-attachment: fixed;
+
 }
 
 /* controle de desibled e */

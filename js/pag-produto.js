@@ -1,7 +1,14 @@
 const allProdutos = document.querySelectorAll('.section-produtos')
 
-console.log(allProdutos)
-for(let i= 0;i<allProdutos.length;i++){
-  console.log(allProdutos[i].id)
+allProdutos.forEach(output)
 
+function output(item, index,arrey){
+  let id_item = arrey[index].id
+
+  //console.log(id_item)
+  let filhos = document.querySelector('#'+id_item)
+
+  nos_filhos = filhos.parentNode.children;
+
+  console.log(nos_filhos)
 }

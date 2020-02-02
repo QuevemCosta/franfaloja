@@ -2,13 +2,13 @@ document.getElementById('abre-menu').addEventListener('click',
     function(){
         document.getElementById('abre-menu').style.display="none"
         document.getElementById('fecha-menu').style.display="block"
-        document.getElementById('menu-mobo').style.display="block"
+        document.getElementById('desk-menu').style.display="block"
     }
 )
 document.getElementById('fecha-menu').addEventListener('click',
 function(){
     document.getElementById('abre-menu').style.display="block"
     document.getElementById('fecha-menu').style.display="none"
-    document.getElementById('menu-mobo').style.display="none"
+    document.getElementById('desk-menu').style.display="none"
 }
 )

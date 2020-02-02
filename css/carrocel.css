@@ -1,12 +1,11 @@
 #carrocel{
     color:#444;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 150px);
 }
 #carrocel > div{
     width: 100%;
     padding-top:0px;
-    background-color: rgba(252, 252, 252, 0.959);
     height: 100%;
 }
 #carrocel > div > figure{
@@ -17,7 +16,6 @@
     border-radius: 0px;
     border:none;
     background-color: rgb(94, 96, 99);
-    box-shadow: 5px 5px 15px;
 
 
 }

@@ -31,37 +31,62 @@
         </div>
 
         <div class="grup-btn-menu">
-            <button type="menu" id="abre-menu">Menu</button>
+            <button type="menu" id="abre-menu"><img src="icons/icon-menu.png" alt="botão de menu franfaloja"></button>
             <button type="button" id="fecha-menu">x</button>
         </div>
         <div id="topo-contato" >
             <ul>
                 
                 <li><img src="icons/call.png" alt=""> (93)3544-1051</li>
+                <li><img src="icons/facebook-circular-logo.png" alt=""> Curta nossa pagina</li>
+                
+            </ul>
+            <ul>
                 <li><img src="icons/whatsapp-logo-variant.png" alt=""> (93) 99138-1257</li>
                 <li><img src="icons/black-back-closed-envelope-shape.png" alt=""> franfa54@hotmail.com</li>
             </ul>
         </div>
 
     </header>
-    <div id="menu-descktop">
-        <nav>
+    <div id="menu">
+        <nav id="desk-menu">
             <ul>
                 <li class="ativo"><a href="index.html">Início</a></li>
                 <li><a href="paginas/ofertas.php">Ofertas</a></li>
+                <li><a href="#" id="btn-categoria" >Categorias</a></li>
+
                 <li><a href="paginas/contato.html">Contato</a></li>
                 <li><a href="paginas/quem-somos.html">Quem somos</a></li>
             
             </ul>
         </nav>
-    </div>
-    <div id="menu-mobo">
-        <nav>
+        <nav id="categorias-nav" class="unset" >
             <ul>
-                <li class="ativo"><a href="index.html">Início</a></li>
-                <li><a href="paginas/ofertas.php">Ofertas</a></li>
-                <li><a href="paginas/contato.html">Contato</a></li>
-                <li><a href="paginas/quem-somos.html">Quem somos</a></li>
+                <button type="button" id="btn-fechar" value="fechar-nav-categorias" >Fechar</button>
+
+                <li><a href="">Academia</a></li>
+                <li><a href="">Armarios e Mesas</a></li>
+                <li><a href="">Bicicletas</a></li>
+                <li><a href="">Colcões e camas box</a></li>
+                <li><a href="">Departamento Infatil</a></li>
+                <li><a href="">Eletronicos</a></li>
+                <li><a href="">Eletrodomesticos</a></li>
+                <li><a href="">Eletro Portateis</a></li>
+                <li><a href="">Estofados</a></li>
+                <li><a href="">Informatica</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="">Academia</a></li>
+                <li><a href="">Armarios e Mesas</a></li>
+                <li><a href="">Bicicletas</a></li>
+                <li><a href="">Colcões e camas box</a></li>
+                <li><a href="">Departamento Infatil</a></li>
+                <li><a href="">Eletronicos</a></li>
+                <li><a href="">Eletrodomesticos</a></li>
+                <li><a href="">Eletro Portateis</a></li>
+                <li><a href="">Estofados</a></li>
+                <li><a href="">Informatica</a></li>
             </ul>
         </nav>
     </div>
@@ -99,48 +124,41 @@
 
             </section>
         </section>
-        <section class="containner-produtos">
         
-            <nav>
-                <ul>
-                    <li title="Cama Mesa e banho">
-                        <a href="#section-cama" onclick="paginacao('btn-cama-banho')"  id="btn-cama-banho">
-                            <img src="icons/cama.png" alt="" style="width: 30px;height: 30px;" >
-                        </a>
-                    </li>
-                    <li title="Eletrodomesticos">
-                        <a href="#section-eletro" onclick="paginacao('btn-eletro')" id="btn-eletro">
-                            <img src="icons/eletro.png" alt="" style="width: 30px;height: 30px" >
-                        </a>
-                    </li>
-                    <li title="Instrumentos musicais">
-                        <a href="#section-musica" onclick="paginacao('btn-musica')" id="btn-musica">
-                            <img src="icons/music.png" alt="" style="width: 30px; height: 30px" s>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-        <section id="section-cama">
-            <h2 class="categoria>">Cama</h2>
+<!---Inicio da area de apresentação de produtos-->
+        
+        <section id="section-cama" class="section-categorias">
+            <h2 >Nome da categoria</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta illo delectus, molestias aut ratione minima
+                 illo delectus, molestias aut ratione minima
+            </p>
             <div id="cama" class="section-produtos" >
 
             </div>
         </section>
 
-        <section id="section-eletro">
-            <h2>eltro</h2>
-            <div id="eletro" class="section-produtos" >
+        <section id="section-eletro" class="section-categorias" >
+            <h2 >Nome da categoria</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta illo delectus, molestias aut ratione minima
+                 illo delectus, molestias aut ratione minima
+            </p>
+            <div id="musica" class="section-produtos" >
                 
             </div >
         </section>
 
-        <section id="section-musica">
-            <h2>musica</h2>
-                    <div id="musica" class="section-produtos" >
+        <section id="section-musica" class="section-categorias" >
+            <h2 >Nome da categoria</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta illo delectus, molestias aut ratione minima
+                 illo delectus, molestias aut ratione minima
+            </p>
+            <div id="eletro" class="section-produtos" >
             </div>
         </section>
-    </section>
+<!---Fim da area de apresentação de produtos-->
 
     </main> 
 
@@ -186,6 +204,7 @@
     <script src="js/btn-menu.js"></script>
     <script src="js/paginacao.js"></script>
     <script src="js/pag-produto.js"></script>
+    <script src="js/menu-categorias.js"></script>
 
 </body>
 

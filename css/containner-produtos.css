@@ -50,9 +50,7 @@
 
 
 /* container item produto*/
-#section-cama, #section-eletro, #section-musica{
-    padding-top: 50px;
-}
+
 .section-produtos{
     width: 100%;
     padding: 20px;
@@ -62,6 +60,7 @@
     justify-content: center;
 }
 .section-produtos div{
+    background-color: #fff;
     width: 180px;
     cursor: pointer;
     margin: 10px;
@@ -95,11 +94,31 @@
 .section-produtos div h2{
     color: #444;
 }
-.categoria{
-    width: 100%;
-    border:1px solid blue;
-    display: block;
+
+
+/*Container de categorias*/
+.section-categorias:nth-child(2n){
+    background-color: rgb(252, 241, 144);
+    color: #fff;
 }
+.section-categorias{
+    text-align: center;
+    padding-top: 50px; 
+}
+.section-categorias >h2{
+    color:#EE5D31;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 50px;
+}
+.section-categorias > p{
+    color: #2A5DA4;
+    width: 70%;
+    line-height: 35px;
+    margin: auto;
+
+}
+
 
 @media screen and (max-width: 700px) {
         .section-produtos div{

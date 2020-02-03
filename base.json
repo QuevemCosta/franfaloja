@@ -23,7 +23,7 @@
         "categoria":"eletro",
         "preco_a_vista":"350.00",
         "preco_parcelado":"450.00",
-        "imagem":"imagems\/1579468497.jpeg",
+        "imagem":"img/musica/guitatarras.jpg",
         "status":"novidad"
     },
     {
@@ -109,6 +109,15 @@
     },
     {
         "cod":"13",
+        "descricao":"Cama de Casal Ortbom",
+        "categoria":"cama",
+        "preco_a_vista":"350.00",
+        "preco_parcelado":"450.00",
+        "imagem":"imagems\/1579468497.jpeg",
+        "status":"novidad"
+    },
+    {
+        "cod":"14",
         "descricao":"Cama de Casal Ortbom",
         "categoria":"cama",
         "preco_a_vista":"350.00",

@@ -1,0 +1,28 @@
+#saida-produto{
+    border:1px solid red;
+    width: 100%;
+    padding: 50px;
+
+}
+#saida-produto > div{
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#saida-produto > div div {
+    color: #c52626;
+    width: 40%;
+    padding:30px ;
+    text-align:left;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+#saida-produto > div div:first-child{
+    width: 50%;
+    padding: 20px;
+}
+#saida-produto > div div>img{
+    width: 100%;
+}

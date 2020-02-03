@@ -19,14 +19,17 @@ window.addEventListener('load',async function(){
                    const preco_parcelado = document.createTextNode("Ou "+"R$ "+item["preco_parcelado"]+" em até 10X");
                    
                    const id = document.createAttribute('id')
+                   const click = document.createAttribute('onclick')
                    const classe = document.createAttribute('class');
                    const src_image = document.createAttribute('src');
                    
+                   click.value = "pagProduto("+ item['cod'] +")"
                    id.value = item['cod'];
                    src_image.value =item['imagem'];
                    classe.value = item['categoria'];
 
                    div.setAttributeNode(id);
+                   div.setAttributeNode(click);
                    div.setAttributeNode(classe);
                    div.appendChild(img).setAttributeNode(src_image);
 
@@ -58,3 +61,8 @@ window.addEventListener('load',async function(){
       }
    })
 })
+
+function pagProduto(click){
+    window.open('../paginas/pag-produto.html?'+click,'_self')
+    
+}

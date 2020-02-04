@@ -1,7 +1,7 @@
 
 function pagProduto(click){
     console.log(location.href+'/paginas/pag-produto.html?'+click,'_self')
-    window.open(location+'/paginas/pag-produto.html?'+click,'_self')
+    window.open(location.href+'/paginas/pag-produto.html?'+click,'_self')
          
  }
 

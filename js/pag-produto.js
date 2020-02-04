@@ -1,7 +1,8 @@
 window.addEventListener('load',async function(){
-  fetch('../base.json').then(function(response){
+  fetch(location.href+'base.json').then(function(response){
      if(response.status == 200){
          var pro = response.json().then(function(retorno){
+           console.log(pro)
             console.log(retorno['produtos'])
             let url = window.location.search
             url = url.substring(1)//seleciona apartir do indici 1 eliminado o sinal de  "?"

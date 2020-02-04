@@ -1,3 +1,12 @@
+
+function pagProduto(click){
+    console.log(location.href+'/paginas/pag-produto.html?'+click,'_self')
+    window.open(location+'/paginas/pag-produto.html?'+click,'_self')
+         
+ }
+
+
+
 window.addEventListener('load',async function(){
     fetch('base.json').then(function(response){
        if(response.status == 200){
@@ -61,8 +70,3 @@ window.addEventListener('load',async function(){
       }
    })
 })
-
-function pagProduto(click){
-    window.open('../paginas/pag-produto.html?'+click,'_self')
-    
-}

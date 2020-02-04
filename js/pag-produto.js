@@ -27,18 +27,19 @@ window.addEventListener('load',async function(){
                 const id =  document.createAttribute('id');
                 const src = document.createAttribute('src');
 
-                //const descricao = document.createTextNode(produto['descricao']);
                 const descricao = document.createTextNode(produto["descricao"]);
-
+                const info = document.createTextNode(produto["info"]);
   
                 //Adicionando valores aos atributos html
                 id.value = codProduto;
                 src.value = "../"+produto['imagem'];
+                p.value = info;
 
 
                 div.setAttributeNode(id);
                 div.appendChild(containnerImg).appendChild(img).setAttributeNode(src);
                 div.appendChild(containnerDescricao).appendChild(descricao);
+                div.appendChild(containnerDescricao).appendChild(p);
 
 
 

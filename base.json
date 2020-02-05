@@ -2,7 +2,8 @@
     {
         "cod":"1",
         "descricao":"Musica",
-        "categoria":"eletro",
+        "info":"the 1960s with the releasesoftware like Aldus PageMaker including versions of Lorem Ipsum",
+        "categoria":"eletro",       
         "preco_a_vista":"350.00",
         "preco_parcelado":"450.00",
         "imagem":"imagems\/1579468497.jpeg",

@@ -1,5 +1,5 @@
 window.addEventListener('load',async function(){
-  fetch('base.json').then(function(response){
+  fetch(location.href+'base.json').then(function(response){
      if(response.status == 200){
          var pro = response.json().then(function(retorno){
            console.log(pro)
@@ -23,25 +23,27 @@ window.addEventListener('load',async function(){
                 const containnerImg = document.createElement("div");
                 const h2 = document.createElement('h2');
                 const img = document.createElement('img');
-                const p = document.createElement('div');//Informações do produto "criar este item no db"
+                const p = document.createElement('p');//Informações do produto "criar este item no db"
 
                 const id =  document.createAttribute('id');
                 const src = document.createAttribute('src');
 
                 const descricao = document.createTextNode(produto["descricao"]);
                 const info = document.createTextNode(produto["info"]);
-
-                console.log(info)
   
                 //Adicionando valores aos atributos html
                 id.value = codProduto;
                 src.value = produto['imagem'];
-                p.value = info
+                p.value = info;
+
 
                 div.setAttributeNode(id);
                 div.appendChild(containnerImg).appendChild(img).setAttributeNode(src);
                 div.appendChild(containnerDescricao).appendChild(descricao);
                 div.appendChild(containnerDescricao).appendChild(p);
+
+
+
 
                 document.getElementById('saida-produto').appendChild(div)
 

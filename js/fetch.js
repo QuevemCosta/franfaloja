@@ -20,8 +20,8 @@ window.addEventListener('load',async function(){
                    const div = document.createElement("div");
                    const h2 = document.createElement("h2");
                    const span = document.createElement("span");
-                   const img = document.createElement("img");
                    const lagend = document.createElement("legend");
+                   const img = document.createElement("img");
                    
                    const descricao = document.createTextNode(item["descricao"]);
                    const preco_a_vista = document.createTextNode("R$ "+item["preco_a_vista"]);

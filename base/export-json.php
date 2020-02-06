@@ -6,6 +6,6 @@
     while( $post_Produto = mysqli_fetch_assoc($result)){
 
     $json = json_encode(["produtos" => [$post_Produto]]);
-    echo "<pre>";
+    //echo "<pre>";
     print_r($json);
 }

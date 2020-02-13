@@ -1,0 +1,61 @@
+header{
+    width: 100%;
+    height: 60px;
+    padding: 5px 20px;
+    background-color: #2A5DA4;
+}
+header h3{
+    color: #fff;
+    font-size: 2rem;
+
+}
+section{
+    width: 100%;
+    padding: 20px;
+
+}
+section #form-cadastro-produtos fieldset {
+    border: 2px solid #2a5da4;
+    border-radius: 5px;
+    box-shadow: 10px  20px  30px #2A5DA4;
+}
+
+section #form-cadastro-produtos fieldset >legend{
+    font-size: 1.5rem;
+    color: #2a5da4;
+    font-weight: 500;
+}
+section #form-cadastro-produtos{
+    width: 500px;
+    height: 600px;
+    overflow: auto;
+    position: absolute;
+}
+section #form-cadastro-produtos form{
+    width: 100%;
+    height: 100%;
+}
+section #form-cadastro-produtos form input{
+    padding:10px;
+    width: 80%;
+    margin:  10px auto;
+    display: block;
+}
+section #form-cadastro-produtos form select{
+    width:50%;
+    position: absolute;
+    right: 50px;
+}
+section #form-cadastro-produtos form div{
+    width: 300px;
+    margin: 50px 30px;
+    text-align: center;
+    border: 1px solid #dddd;
+}
+section #form-cadastro-produtos form button{
+    width: 60%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+
+}

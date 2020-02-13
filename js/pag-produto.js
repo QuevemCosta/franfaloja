@@ -1,12 +1,12 @@
 window.addEventListener('load',async function(){
-  fetch('base.json').then(function(response){
+  fetch('base/base.json').then(function(response){
      if(response.status == 200){
-         var pro = response.json().then(function(retorno){
+         var pro = response.json().then(function(json){
 
             let url = window.location.search
             url = url.substring(1)//seleciona apartir do indici 1 eliminado o sinal de  "?"
 
-            let dataProdutos = retorno['produtos'];
+            let dataProdutos = json['produtos'];
             
             for(let i = 0;i<dataProdutos.length;i++){
               //console.log(dataProdutos[i])

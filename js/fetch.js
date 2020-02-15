@@ -28,7 +28,7 @@ window.addEventListener('load',async function(){
                     let $categoria = item[2];
                     let $preco_a_vista = item[3];
                     let $preco_parcelado = item[4];
-                    let $imagem = item[5];
+                    let $imagem = 'franfaloja/'+item[5];
 
 
                     const div = document.createElement("div");
@@ -60,18 +60,18 @@ window.addEventListener('load',async function(){
                     div.appendChild(span).appendChild(preco_a_vista);
                     div.appendChild(lagend).appendChild(preco_parcelado);
 
-                    if(div.className == $categoria){
+                    if(div.className == 'cama'){
                     
-                        document.getElementById($categoria).appendChild(div);
+                        document.getElementById('cama').appendChild(div);
                     }
                     if(div.className == 'eletro'){
                     
                     document.getElementById('eletro').appendChild(div);
 
                     }
-                    if(div.className == 'musica'){
+                    if(div.className == 'bicicleta'){
                     
-                    document.getElementById('musica').appendChild(div);
+                    document.getElementById('esporte').appendChild(div);
 
                     }
                 }

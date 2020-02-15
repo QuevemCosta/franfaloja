@@ -22,7 +22,7 @@
         <div id="form-cadastro-produtos">
             <fieldset>
                 <legend>Cadastro de Produtos</legend>
-                <form action="input.php" method="post">
+                <form action="input.php" method="post" enctype="multipart/form-data" >
 
                     <input type="text"
                     name="descricao"
@@ -38,6 +38,16 @@
                     
                     <select name="categoria" id="categoria">
                         <option value="">--Categoria--</option>
+                        <option value="cama">Cama</option>
+                        <option value="eletro">Eletrodometicos</option>
+                        <option value="informatica">Informatica</option>
+                        <option value="telefonia">Telefones e Celulares</option>
+                        <option value="eletro-portateis">Eletro portatei</option>
+                        <option value="cameras-filmadoras">Cameras e filmadoras</option>
+                        <option value="musica">Instrumentos musicais</option>
+                        <option value="musica">Departamento Infantil</option>
+                        <option value="bicicleta">Bicicletas</option>
+                        <option value="academia">Academia</option>
                         <option value=""><a href="#">Nova Categoria</a></option>
                     </select>
 
@@ -48,13 +58,13 @@
                         <label for="avista">Parcelado</label>
                         <input type="text" name="preco_parcelado" id="parcelado" >
                     </div>
+                    <input type="text" name="status" id="status" >
 
-                    <input type="text" neme="status" placeholder="Status" >
 
                     <input type="file" id="imagem"  name="imagem">
 
                 <button type="reset">Limpar</button>
-                <button type="reset">Cadastrar</button>
+                <button type="submit" >Cadastrar</button>
                 </form>
             </fieldset>
         </div>

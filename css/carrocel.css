@@ -57,7 +57,7 @@
 #carrocel > div #item-item-1{
     background-image:url('../img/banner/banner5.jpg');
     background-color: #eee;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: right;

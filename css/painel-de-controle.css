@@ -17,18 +17,17 @@ section{
 section #form-cadastro-produtos fieldset {
     border: 2px solid #2a5da4;
     border-radius: 5px;
-    box-shadow: 10px  20px  30px #2A5DA4;
+    box-shadow: 10px  20px  30px rgb(183, 206, 240);
 }
 
 section #form-cadastro-produtos fieldset >legend{
     font-size: 1.5rem;
-    color: #2a5da4;
+    color: #bbc7d8;
     font-weight: 500;
 }
 section #form-cadastro-produtos{
     width: 500px;
     height: 600px;
-    overflow: auto;
     position: absolute;
 }
 section #form-cadastro-produtos form{

@@ -1,9 +1,9 @@
 <?php
-    echo "<pre>>";
-    print_r($_POST);
-    $imagem = $_FILES['imagem'];
-    print_r($_FILES);
 
+require_once('valida-acesso.php');
+
+
+    $imagem = $_FILES['imagem'];
 
     function salvaImagem ($name){
         $descricao = $_POST['descricao'];
@@ -40,7 +40,7 @@
         }
         else{
             salvaImagem($imagem);
-            header('location:index.php?ok');
+            header('location:home.php?ok');
         }
     }
 

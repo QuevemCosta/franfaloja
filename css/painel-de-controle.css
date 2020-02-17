@@ -9,10 +9,19 @@ header h3{
     font-size: 2rem;
 
 }
+header a{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #fff;
+}
 section{
     width: 100%;
     padding: 20px;
 
+}
+section hr{
+    margin:30px; 
 }
 section #form-cadastro-produtos fieldset {
     border: 2px solid #2a5da4;
@@ -26,13 +35,22 @@ section #form-cadastro-produtos fieldset >legend{
     font-weight: 500;
 }
 section #form-cadastro-produtos{
-    width: 500px;
-    height: 600px;
-    position: absolute;
+    width: 50%
+    
 }
 section #form-cadastro-produtos form{
-    width: 100%;
+    width: 90%;
     height: 100%;
+}
+section #form-cadastro-produtos form textarea{
+    resize: none;
+    margin-left:30px;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid blue;
+}
+section #form-cadastro-produtos form > label{
+    margin-left: 30px;
 }
 section #form-cadastro-produtos form input{
     padding:10px;
@@ -41,9 +59,9 @@ section #form-cadastro-produtos form input{
     display: block;
 }
 section #form-cadastro-produtos form select{
-    width:50%;
-    position: absolute;
-    right: 50px;
+    width:80%;
+    top:350px;
+    margin-left: 30px;
 }
 section #form-cadastro-produtos form div{
     width: 300px;
@@ -56,5 +74,88 @@ section #form-cadastro-produtos form button{
     padding: 10px;
     margin: 10px auto;
     display: block;
+}
+section > .grup-buttons{
+    border: 1px solid #eeee;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 10px rgb(183, 206, 240);
+}
+section > .grup-buttons >.items{
+    background-color: rgb(238, 216, 118);
+    color: #444;
+    border: none;
+    margin: 30px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    padding-top:95px ;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px #999;
+    text-align: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+section > .grup-buttons >.items:hover{
+    background-color: #eeee;
+}
+
+
+/*Botao*/
+.button-geral{
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    background-color: #999999;
+    cursor: pointer;
+    outline: none;
+}
+.button-geral:hover{
+    background-color: #9999;
+
+}
+
+@media screen and (max-width:700px){
+    header{
+        height: 100px;
+        text-align: center;
+    }
+    header h3{
+        font-size: 25px;
+    
+    }
+    header a{
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        color: #fff;
+    }
+    section{
+        padding: 20px 0;
+    }
+    section #form-cadastro-produtos{
+        width: 80%;
+    }
+    section > .grup-buttons >{
+        margin: 0;
+        width: 90%;
+        padding: 0px;
+        flex-direction: column;
+    }
+    section > .grup-buttons >.items{
+        margin: auto;
+        margin-top: 20px;
+    }
 
 }

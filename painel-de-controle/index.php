@@ -3,71 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Painel Franfaloja</title>
-
-
-    <link rel="stylesheet" href="../css/painel-de-controle.css">
+    <title>Login Painel Franfaloja</title>
+    
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/footer.css">
-
 
 </head>
 <body>
-    <header>
-        <h3>Painel de Controle Franfaloja</h3>
-    </header>
-    <section>
-
-        <div id="form-cadastro-produtos">
+    <main>
+        <section id="tela-login">
             <fieldset>
-                <legend>Cadastro de Produtos</legend>
-                <form action="input.php" method="post" enctype="multipart/form-data" >
+                <legend>Login Franfaloja</legend>
 
-                    <input type="text"
-                    name="descricao"
-                    placeholder="Produto"
-                    title="Breve descriçõs do produto" >
-
-                    <input type="text" 
-                    name="info" 
-                    maxlength="255" 
-                    placeholder="Informações do Produto" 
-                    title="Informações Sobre o Produto. Será mostrado na pagina de 
-                    vendas como detales do produto" >
+                <form action="valida-login.php" method="post">
+                    <input type="text" name="user" placeholder="Usuario">
+                    <input type="password" name="pass" placeholder="Senha">
                     
-                    <select name="categoria" id="categoria">
-                        <option value="">--Categoria--</option>
-                        <option value="cama">Cama</option>
-                        <option value="eletro">Eletrodometicos</option>
-                        <option value="informatica">Informatica</option>
-                        <option value="telefonia">Telefones e Celulares</option>
-                        <option value="eletro-portateis">Eletro portatei</option>
-                        <option value="cameras-filmadoras">Cameras e filmadoras</option>
-                        <option value="musica">Instrumentos musicais</option>
-                        <option value="musica">Departamento Infantil</option>
-                        <option value="bicicleta">Bicicletas</option>
-                        <option value="academia">Academia</option>
-                        <option value=""><a href="#">Nova Categoria</a></option>
-                    </select>
+                    <button type="submit">Entrar</button>
+                    
+                    <?php if(isset($_GET['login'])&& $_GET['login'] == 'erro'){?>
+                        <p  >Usuario ou senha invalido(s)</p>
+                    <?}?>
 
-                    <div>
-                        <label for="avista">Preço a vista</label>
-                        <input type="text" name="preco_a_vista" id="avista" >
-
-                        <label for="avista">Parcelado</label>
-                        <input type="text" name="preco_parcelado" id="parcelado" >
-                    </div>
-                    <input type="text" name="status" id="status" >
-
-
-                    <input type="file" id="imagem"  name="imagem">
-
-                <button type="reset">Limpar</button>
-                <button type="submit" >Cadastrar</button>
+                    <a href="#">Esqueceu a senha?</a>
                 </form>
             </fieldset>
-        </div>
-    </section>    
+        </section>
+    </main>
 </body>
 </html>
